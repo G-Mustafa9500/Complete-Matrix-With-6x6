@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ultimate 6x6 Matrix Calculator - Addition</title>
+    <link rel="stylesheet" href="style6x6.css"> 
+    <style>
+        body{
+            overflow-y: auto;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>6x6 Matrix Addition</h1>
+        <p class="subtitle">Enter the values for Matrix A and Matrix B</p>
+    </header>
+
+    <nav>
+        <div class="nav-container">
+            <div class="nav-section">
+                <div class="nav-title">2x2 Matrix</div>
+                <div class="nav-links">
+                    <a href="index.html" class="nav-link">Addition</a>
+                    <a href="subtract.html" class="nav-link">Subtraction</a>
+                    <a href="multiply.html" class="nav-link">Multiplication</a>
+                </div>
+            </div>
+            <div class="nav-section">
+                <div class="nav-title">3x3 Matrix</div>
+                <div class="nav-links">
+                    <a href="index3.html" class="nav-link">Addition</a>
+                    <a href="subtract3.html" class="nav-link">Subtraction</a>
+                    <a href="multiply3.html" class="nav-link">Multiplication</a>
+                </div>
+            </div>
+            <div class="nav-section">
+                <div class="nav-title">4x4 Matrix</div>
+                <div class="nav-links">
+                    <a href="index4.html" class="nav-link">Addition</a>
+                    <a href="subtract4.html" class="nav-link">Subtraction</a>
+                    <a href="multiply4.html" class="nav-link">Multiplication</a>
+                </div>
+            </div>
+            <div class="nav-section">
+                <div class="nav-title">5x5 Matrix</div>
+                <div class="nav-links">
+                    <a href="index5.html" class="nav-link">Addition</a>
+                    <a href="subtract5.html" class="nav-link">Subtraction</a>
+                    <a href="multiply5.html" class="nav-link">Multiplication</a>
+                </div>
+            </div>
+            <div class="nav-section">
+                <div class="nav-title">6x6 Matrix</div>
+                <div class="nav-links">
+                    <a href="index6x6.html" class="nav-link active">Addition</a>
+                    <a href="subtract6x6.html" class="nav-link">Subtraction</a>
+                    <a href="multiply6x6.html" class="nav-link">Multiplication</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+
+    <section id="matrix-6x6-add" class="calculator-section active">
+        <div class="matrix-container matrix-6x6">
+            <div class="matrix-box result-box-container-A1">
+                <h2>Matrix A</h2>
+                <table>
+                    <tr>
+                        <td><input type="text" id="A_r1c1" value="1"></td>
+                        <td><input type="text" id="A_r1c2" value="2"></td>
+                        <td><input type="text" id="A_r1c3" value="3"></td>
+                        <td><input type="text" id="A_r1c4" value="4"></td>
+                        <td><input type="text" id="A_r1c5" value="5"></td>
+                        <td><input type="text" id="A_r1c6" value="6"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="A_r2c1" value="7"></td>
+                        <td><input type="text" id="A_r2c2" value="8"></td>
+                        <td><input type="text" id="A_r2c3" value="9"></td>
+                        <td><input type="text" id="A_r2c4" value="10"></td>
+                        <td><input type="text" id="A_r2c5" value="11"></td>
+                        <td><input type="text" id="A_r2c6" value="12"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="A_r3c1" value="13"></td>
+                        <td><input type="text" id="A_r3c2" value="14"></td>
+                        <td><input type="text" id="A_r3c3" value="15"></td>
+                        <td><input type="text" id="A_r3c4" value="16"></td>
+                        <td><input type="text" id="A_r3c5" value="17"></td>
+                        <td><input type="text" id="A_r3c6" value="18"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="A_r4c1" value="19"></td>
+                        <td><input type="text" id="A_r4c2" value="20"></td>
+                        <td><input type="text" id="A_r4c3" value="21"></td>
+                        <td><input type="text" id="A_r4c4" value="22"></td>
+                        <td><input type="text" id="A_r4c5" value="23"></td>
+                        <td><input type="text" id="A_r4c6" value="24"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="A_r5c1" value="25"></td>
+                        <td><input type="text" id="A_r5c2" value="26"></td>
+                        <td><input type="text" id="A_r5c3" value="27"></td>
+                        <td><input type="text" id="A_r5c4" value="28"></td>
+                        <td><input type="text" id="A_r5c5" value="29"></td>
+                        <td><input type="text" id="A_r5c6" value="30"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="A_r6c1" value="31"></td>
+                        <td><input type="text" id="A_r6c2" value="32"></td>
+                        <td><input type="text" id="A_r6c3" value="33"></td>
+                        <td><input type="text" id="A_r6c4" value="34"></td>
+                        <td><input type="text" id="A_r6c5" value="35"></td>
+                        <td><input type="text" id="A_r6c6" value="36"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <span class="operator">+</span>
+
+            <div class="matrix-box result-box-container-B1">
+                <h2>Matrix B</h2>
+                <table>
+                    <tr>
+                        <td><input type="text" id="B_r1c1" value="0"></td>
+                        <td><input type="text" id="B_r1c2" value="0"></td>
+                        <td><input type="text" id="B_r1c3" value="0"></td>
+                        <td><input type="text" id="B_r1c4" value="0"></td>
+                        <td><input type="text" id="B_r1c5" value="0"></td>
+                        <td><input type="text" id="B_r1c6" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="B_r2c1" value="0"></td>
+                        <td><input type="text" id="B_r2c2" value="0"></td>
+                        <td><input type="text" id="B_r2c3" value="0"></td>
+                        <td><input type="text" id="B_r2c4" value="0"></td>
+                        <td><input type="text" id="B_r2c5" value="0"></td>
+                        <td><input type="text" id="B_r2c6" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="B_r3c1" value="0"></td>
+                        <td><input type="text" id="B_r3c2" value="0"></td>
+                        <td><input type="text" id="B_r3c3" value="0"></td>
+                        <td><input type="text" id="B_r3c4" value="0"></td>
+                        <td><input type="text" id="B_r3c5" value="0"></td>
+                        <td><input type="text" id="B_r3c6" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="B_r4c1" value="0"></td>
+                        <td><input type="text" id="B_r4c2" value="0"></td>
+                        <td><input type="text" id="B_r4c3" value="0"></td>
+                        <td><input type="text" id="B_r4c4" value="0"></td>
+                        <td><input type="text" id="B_r4c5" value="0"></td>
+                        <td><input type="text" id="B_r4c6" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="B_r5c1" value="0"></td>
+                        <td><input type="text" id="B_r5c2" value="0"></td>
+                        <td><input type="text" id="B_r5c3" value="0"></td>
+                        <td><input type="text" id="B_r5c4" value="0"></td>
+                        <td><input type="text" id="B_r5c5" value="0"></td>
+                        <td><input type="text" id="B_r5c6" value="0"></td>
+                    </tr>
+                    <tr>
+                        <td><input type="text" id="B_r6c1" value="0"></td>
+                        <td><input type="text" id="B_r6c2" value="0"></td>
+                        <td><input type="text" id="B_r6c3" value="0"></td>
+                        <td><input type="text" id="B_r6c4" value="0"></td>
+                        <td><input type="text" id="B_r6c5" value="0"></td>
+                        <td><input type="text" id="B_r6c6" value="0"></td>
+                    </tr>
+                </table>
+            </div>
+
+            <!-- <span class="operator">=</span> -->
+
+            <div class="matrix-box result-box-container">
+                <h2>Result</h2>
+                <table>
+                    <tr>
+                        <td><div id="C_r1c1" class="result-cell">0</div></td>
+                        <td><div id="C_r1c2" class="result-cell">0</div></td>
+                        <td><div id="C_r1c3" class="result-cell">0</div></td>
+                        <td><div id="C_r1c4" class="result-cell">0</div></td>
+                        <td><div id="C_r1c5" class="result-cell">0</div></td>
+                        <td><div id="C_r1c6" class="result-cell">0</div></td>
+                    </tr>
+                    <tr>
+                        <td><div id="C_r2c1" class="result-cell">0</div></td>
+                        <td><div id="C_r2c2" class="result-cell">0</div></td>
+                        <td><div id="C_r2c3" class="result-cell">0</div></td>
+                        <td><div id="C_r2c4" class="result-cell">0</div></td>
+                        <td><div id="C_r2c5" class="result-cell">0</div></td>
+                        <td><div id="C_r2c6" class="result-cell">0</div></td>
+                    </tr>
+                    <tr>
+                        <td><div id="C_r3c1" class="result-cell">0</div></td>
+                        <td><div id="C_r3c2" class="result-cell">0</div></td>
+                        <td><div id="C_r3c3" class="result-cell">0</div></td>
+                        <td><div id="C_r3c4" class="result-cell">0</div></td>
+                        <td><div id="C_r3c5" class="result-cell">0</div></td>
+                        <td><div id="C_r3c6" class="result-cell">0</div></td>
+                    </tr>
+                    <tr>
+                        <td><div id="C_r4c1" class="result-cell">0</div></td>
+                        <td><div id="C_r4c2" class="result-cell">0</div></td>
+                        <td><div id="C_r4c3" class="result-cell">0</div></td>
+                        <td><div id="C_r4c4" class="result-cell">0</div></td>
+                        <td><div id="C_r4c5" class="result-cell">0</div></td>
+                        <td><div id="C_r4c6" class="result-cell">0</div></td>
+                    </tr>
+                    <tr>
+                        <td><div id="C_r5c1" class="result-cell">0</div></td>
+                        <td><div id="C_r5c2" class="result-cell">0</div></td>
+                        <td><div id="C_r5c3" class="result-cell">0</div></td>
+                        <td><div id="C_r5c4" class="result-cell">0</div></td>
+                        <td><div id="C_r5c5" class="result-cell">0</div></td>
+                        <td><div id="C_r5c6" class="result-cell">0</div></td>
+                    </tr>
+                    <tr>
+                        <td><div id="C_r6c1" class="result-cell">0</div></td>
+                        <td><div id="C_r6c2" class="result-cell">0</div></td>
+                        <td><div id="C_r6c3" class="result-cell">0</div></td>
+                        <td><div id="C_r6c4" class="result-cell">0</div></td>
+                        <td><div id="C_r6c5" class="result-cell">0</div></td>
+                        <td><div id="C_r6c6" class="result-cell">0</div></td>
+                    </tr>
+                </table>
+            </div>
+        </div>
+
+        <div class="form-controls">
+            <button id="calculateButton" onclick="calculate6x6Addition()">CALCULATE RESULT</button>
+        </div>
+    </section>
+
+    <script src="app6x6.js"></script> 
+</body>
+
+</html>
