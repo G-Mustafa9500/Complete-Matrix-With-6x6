@@ -390,7 +390,7 @@ input[type="text"]:focus {
     font-size: 1.2rem;
     background: linear-gradient(90deg, #7209b7, #4361ee);
     color: white;
-    margin-left: 510px;
+    margin-left: 660px;
     border: none;
     border-radius: 50px;
     cursor: pointer;
@@ -477,4 +477,5 @@ footer {
     color: #8ecae6;
     font-size: 0.9rem;
     width: 100%;
+
 }
